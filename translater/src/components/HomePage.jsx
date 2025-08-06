@@ -8,8 +8,8 @@ export default function HomePage() {
         Record <span className="text-blue-400">&rarr;</span>Transcribe
         <span className="text-blue-400">&rarr;</span>Translate
       </h3>
-      <button className="flex items-center text-base justify-between gap-4 mx-auto w-72 max-w-full my-4">
-        <p>Record</p>
+      <button className="flex specialBtn px-4 py-2 rounded-xl items-center text-base justify-between gap-4 mx-auto w-72 max-w-full my-4">
+        <p className="text-blue-500">Record</p>
         <i className="fa-solid fa-microphone"></i>
       </button>
       <p>Or <label className="text-blue cursor-pointer hover:text-blue-600 duration-200">upload <input className="hidden" type="file" accept=".mp3 .mp4 .wave"  /></label> a mp3 file</p>
