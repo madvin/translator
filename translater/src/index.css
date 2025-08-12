@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 .specialBtn {
-    background: white;
+    /* background: #51a2ff; */
     box-shadow: 0px 14px 55px rgba(96, 160, 255, 0.36);
     transition-duration: 220ms;;
 }

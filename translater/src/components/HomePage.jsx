@@ -18,7 +18,7 @@ export default function HomePage(props) {
         const tempFile = e.target.files[0];
         setFile(tempFile);
       }
-      } className="hidden" type="file" accept=".mp3 .mp4 .wave"  /></label> a mp3 file</p>
+      } className="hidden" type="file" /></label> a mp3 file</p>
       <p className="italic text-slate-400">Something that will be free forever</p>
     </main>
   );
