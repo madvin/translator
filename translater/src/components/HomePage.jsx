@@ -1,6 +1,14 @@
+import { useState, useEffect, useRef } from "react";
 export default function HomePage(props) {
 
   const { setFile, setAudioStream } = props;
+
+  const [recordingStatus, setRecordingState] = useState('inactive');
+  const [audioChunks, setAudioChunks] = useState([]);
+  const [duration, setDuration] = useState(0);
+
+  const mediaRecorder = useRef();
+
   return (
     <main className="flex-1 p-4 flex flex-col gap-3 text-center flex-col text-center sm:gap-4 md:gap-5 justify-center pb-20">
       <h1 className="font-semibold text-5xl sm:text-6xl md:text-7xl">
