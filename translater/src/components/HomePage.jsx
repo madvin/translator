@@ -7,7 +7,44 @@ export default function HomePage(props) {
   const [audioChunks, setAudioChunks] = useState([]);
   const [duration, setDuration] = useState(0);
 
-  const mediaRecorder = useRef();
+  const mediaRecorder = useRef(null);
+
+  const mimeType = 'audio/webm';
+
+  async function startRecording() {
+    let tempStream
+
+    console.log('Start recording');
+
+    try {
+      const streamData = navigator.mediaDevices.getUserMedia({
+        audio: true,
+        video: false
+      });
+      tempStream = streamData;
+    } catch {
+      console.log(err.message);
+      return      
+    }
+    
+    const media = MediaRecorder(tempStream, { type: mimeType });
+
+    mediaRecorder.current = media;
+
+    mediaRecorder.current.start();
+    let localAudioChunks = [];
+    mediaRecorder.current.ondataavaliable = (event) => {
+      if (typeof event.data === 'undefined') { 
+        return
+      }
+      if (event.data.size === 0) {
+        return
+      }
+        localAudioChunks.push(event.data)
+      }
+      setAudioChunks(localAudioChunks);
+    }
+  
 
   return (
     <main className="flex-1 p-4 flex flex-col gap-3 text-center flex-col text-center sm:gap-4 md:gap-5 justify-center pb-20">
