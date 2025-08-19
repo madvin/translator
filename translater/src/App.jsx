@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import HomePage from "./components/HomePage";
 import Header from "./components/Header";
 import FileDisplay from "./components/FileDisplay";

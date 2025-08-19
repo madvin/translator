@@ -8,7 +8,7 @@ export default function FileDisplay(props) {
 
       <div className="flex items-center gap-2">
         <h3 className="font-semibold">Name</h3>
-        <p>{file.name}</p>
+        <p>{file ? file.name : 'Custom audio'}</p>
       </div>
 
       <div className="flex flex-col items-center gap-2">
