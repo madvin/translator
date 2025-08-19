@@ -52,12 +52,23 @@ export default function HomePage(props) {
 
       mediaRecorder.current.stop()
       mediaRecorder.current.onstop = () => {
-        const audioBlob = new Blob(audio)
+        const audioBlob = new Blob(audioChunks, { type: mimeType });
+        setAudioStream(audioBlob);
+        setFile(null);
+        setAudioChunks([]);
       }
-      
     }
 
-
+    useEffect(() => {
+      if (recordingStatus === 'inactive') {
+        return;
+      }
+      const interval = setInterval(() => {
+        setDuration(prev => prev + 1)
+      }, 1000);
+      return () => clearInterval(interval);
+    });
+    
   return (
     <main className="flex-1 p-4 flex flex-col gap-3 text-center flex-col text-center sm:gap-4 md:gap-5 justify-center pb-20">
       <h1 className="font-semibold text-5xl sm:text-6xl md:text-7xl">
