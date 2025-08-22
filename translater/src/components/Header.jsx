@@ -4,7 +4,7 @@ export default function Header() {
       <h2 className="font-small text-1xl sm:text-2xl md:text-3xl">
         Free<span className="text-blue-400 bold">Translater</span>
       </h2>
-      <button className="flex items-center justify-center spacialBtn gap-2 bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 transition-colors">
+      <button className="flex items-center justify-center spacialBtn gap-2 bg-blue-500 text-white px-4 text-sm py-2 rounded-md hover:bg-blue-600 transition-colors">
         <p>New</p>
         <i className="fa-solid fa-plus"></i>
       </button>
