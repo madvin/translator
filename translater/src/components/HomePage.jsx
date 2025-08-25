@@ -67,11 +67,11 @@ export default function HomePage(props) {
   }, [recordingStatus]);
 
   return (
-    <main className="flex-1 p-4 flex flex-col gap-3 text-center sm:gap-4 md:gap-5 justify-center pb-20 w-72 sm:w-96 max-w-full mx-auto">
-      <h1 className="font-semibold text-5xl sm:text-6xl md:text-7xl">
+    <main className="flex-1 flex items-center flex-col text-center sm:gap-4 md:gap-5 justify-center pb-20 w-72 sm:w-96 max-w-full mx-auto">
+      <h1 className="font-semibold text-5xl sm:text-6xl  md:text-7xl">
         Free<span className="text-blue-400 bold font-semibold">Translate</span>
       </h1>
-      <h3 className="font-medium md:text-lg">
+      <h3 className="font-medium  md:text-lg">
         Record <span className="text-blue-400">&rarr;</span> Transcribe{" "}
         <span className="text-blue-400">&rarr;</span> Translate
       </h3>
