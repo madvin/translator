@@ -4,6 +4,8 @@ export default function Information() {
             <h1 className="font-semibold text-4xl sm:text-5xl md:text-6xl">
                 Your <span className="text-blue-400 bold font-semibold">Transcription</span>
             </h1>
+            <button className="flex flex-column color-blue-400"></button>
+            <button className="flex flex-column color-blue-400"></button>
         </main>
     )
 }
