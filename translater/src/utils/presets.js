@@ -227,4 +227,4 @@ export const LANGUAGES = {
     "Yoruba": "yor_Latn",
     "Yue Chinese": "yue_Hant",
     "Zulu": "zul_Latn",
-  }
+}

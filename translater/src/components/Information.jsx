@@ -7,14 +7,14 @@ export default function Information() {
                 Your <span className="text-blue-400 bold font-semibold">Transcription</span>
             </h1>
             <div className=" grid grid-cols-2 flex mx-auto shadow rounded-full overflow-hidden items-center">
-                <button onClick={() => setTab('transcription')} className={"px-4 duration-300 py-1 font-medium " + 
-                    (tab === 'transcription' ? 
-                    "bg-blue-400 text-white" : 
-                    "text-blue-400 bg-white hover:text-blue-600")}>Transcription</button>
-                <button onClick={() => setTab('translation')} className={"px-4 duration-300 py-1 font-medium " + 
-                    (tab === 'translation' ? 
-                    "bg-blue-400 text-white" : 
-                    "text-blue-400 bg-white hover:text-blue-600")}>Translation</button>
+                <button onClick={() => setTab('transcription')} className={"px-4 duration-300 py-1 font-medium " +
+                    (tab === 'transcription' ?
+                        "bg-blue-400 text-white" :
+                        "text-blue-400 bg-white hover:text-blue-600")}>Transcription</button>
+                <button onClick={() => setTab('translation')} className={"px-4 duration-300 py-1 font-medium " +
+                    (tab === 'translation' ?
+                        "bg-blue-400 text-white" :
+                        "text-blue-400 bg-white hover:text-blue-600")}>Translation</button>
             </div>
             {tab === 'transcription' ? <div>Transcription</div> : <div>Translation</div>}
         </main>
