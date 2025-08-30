@@ -1,9 +1,9 @@
 @import "tailwindcss";
 
 .specialBtn {
-    /* background: #51a2ff; */
+    background: white;
     box-shadow: 0px 14px 55px rgba(96, 160, 255, 0.36);
-    transition-duration: 220ms;;
+    transition-duration: 220ms
 }
 
 .specialBtn:hover {
