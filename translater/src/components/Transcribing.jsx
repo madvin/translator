@@ -10,11 +10,11 @@ export default function Transcribing(props) {
 				</h1>
 				<p className="flex items-center flex-col justify-center">{!downloading ? 'warming up cilinders' : 'core cilinders engaged'}</p>
 			</div>
-			<div className="slex flex-col gap-2 sm:gap-4 max-w-[500px] mx-auto w-full">
+			<div className="flex flex-col gap-2 sm:gap-4 max-w-[600px] mx-auto w-full">
 				{[0, 1, 2].map(val => {
 					return (
 						<div key={val} className=
-							{'rounded-full h-2 sm:h-3 bg-slate-400 loading ' + `loading${val}`}></div>
+							{'rounded-full h-2 gap-4 sm:h-3 bg-slate-400 loading ' + `loading${val}`}></div>
 					)
 				})}
 			</div>
