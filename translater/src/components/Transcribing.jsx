@@ -8,9 +8,9 @@ export default function Transcribing(props) {
 				<h1 className="font-semibold text-4xl sm:text-5xl md:text-6xl">
 					<span className="text-blue-400 bold font-semibold">Transcribing</span>
 				</h1>
-				<p>{!downloading ? 'warming up cilinders' : 'core cilinders engaged'}</p>
+				<p className="flex items-center flex-col justify-center">{!downloading ? 'warming up cilinders' : 'core cilinders engaged'}</p>
 			</div>
-			<div>
+			<div className="slex flex-col gap-2 sm:gap-4 max-w-[500px] mx-auto w-full">
 				{[0, 1, 2].map(val => {
 					return (
 						<div key={val} className=
