@@ -154,5 +154,4 @@ function createResultMessage(results, isDone, completeUntilTimestamp) {
         })
 
     }
-
 }
