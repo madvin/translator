@@ -1,6 +1,6 @@
 import { pipeline } from '@xenova/transformers';
 
-class MyTracriptionPipeline {
+class MyTranscriptionPipeline {
     static task = 'automatic-speech-recognition';
     static model = 'openai/whisper-small';
     static instance = null;
