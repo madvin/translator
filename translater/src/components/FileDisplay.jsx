@@ -14,7 +14,7 @@ export default function FileDisplay(props) {
             <div className="flex flex-col items-center gap-2">
                 <button
                     onClick={() => audioStream(null)}
-                    className="specialBtn px-4 py-2 text-white rounded-xl bg-blue-500 hover:bg-red-600 transition-colors"
+                    className="px-4 py-2 text-white rounded-xl bg-blue-500 hover:bg-red-600 transition-colors"
                 >
                     <p>Stop</p>
                 </button>
@@ -23,7 +23,7 @@ export default function FileDisplay(props) {
             <div className="flex flex-col items-center gap-2">
                 <button
                     onClick={handleAudioReset}
-                    className="specialBtn px-4 py-2 text-white rounded-xl bg-blue-500 hover:bg-red-600 transition-colors"
+                    className="px-4 py-2 text-white rounded-xl bg-blue-500 hover:bg-red-600 transition-colors"
                 >
                     <p>Reset</p>
                 </button>
